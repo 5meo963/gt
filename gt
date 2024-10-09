@@ -1,0 +1,311 @@
+1. Display "hello September" when clicking on a button
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<button id="btn">Click me</button>
+<p id="msg"></p>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("#msg").text("hello September");
+  });
+});
+</script>
+</body>
+</html>
+
+2. Display the current date and time using jQuery
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<p id="datetime"></p>
+<script>
+$(document).ready(function(){
+  var currentDateTime = new Date();
+  $("#datetime").text(currentDateTime);
+});
+</script>
+</body>
+</html>
+
+3. Program to display current date and time using alert in jQuery
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<button id="btn">Show Date and Time</button>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    var currentDateTime = new Date();
+    alert(currentDateTime);
+  });
+});
+</script>
+</body>
+</html>
+
+4. Display date and time using slide down in jQuery
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<button id="btn">Show Date and Time</button>
+<p id="datetime" style="display:none;"></p>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    var currentDateTime = new Date();
+    $("#datetime").text(currentDateTime).slideDown();
+  });
+});
+</script>
+</body>
+</html>
+
+5. Accept 2 numbers and display their sum
+A) Using alert()
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<input type="number" id="num1" placeholder="Enter first number">
+<input type="number" id="num2" placeholder="Enter second number">
+<button id="sumBtn">Show Sum</button>
+<script>
+$(document).ready(function(){
+  $("#sumBtn").click(function(){
+    var num1 = parseInt($("#num1").val());
+    var num2 = parseInt($("#num2").val());
+    var sum = num1 + num2;
+    alert("Sum: " + sum);
+  });
+});
+</script>
+</body>
+</html>
+B) Using slideDown()
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<input type="number" id="num1" placeholder="Enter first number">
+<input type="number" id="num2" placeholder="Enter second number">
+<button id="sumBtn">Show Sum</button>
+<p id="sumResult" style="display:none;"></p>
+<script>
+$(document).ready(function(){
+  $("#sumBtn").click(function(){
+    var num1 = parseInt($("#num1").val());
+    var num2 = parseInt($("#num2").val());
+    var sum = num1 + num2;
+    $("#sumResult").text("Sum: " + sum).slideDown();
+  });
+});
+</script>
+</body>
+</html>
+
+
+Here are the jQuery solutions for each question you shared:
+
+1. Display "hello September" when clicking on a button
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<button id="btn">Click me</button>
+<p id="msg"></p>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("#msg").text("hello September");
+  });
+});
+</script>
+</body>
+</html>
+2. Display the current date and time using jQuery
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<p id="datetime"></p>
+<script>
+$(document).ready(function(){
+  var currentDateTime = new Date();
+  $("#datetime").text(currentDateTime);
+});
+</script>
+</body>
+</html>
+3. Program to display current date and time using alert in jQuery
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<button id="btn">Show Date and Time</button>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    var currentDateTime = new Date();
+    alert(currentDateTime);
+  });
+});
+</script>
+</body>
+</html>
+4. Display date and time using slide down in jQuery
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<button id="btn">Show Date and Time</button>
+<p id="datetime" style="display:none;"></p>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    var currentDateTime = new Date();
+    $("#datetime").text(currentDateTime).slideDown();
+  });
+});
+</script>
+</body>
+</html>
+
+5. Accept 2 numbers and display their sum
+A) Using alert()
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<input type="number" id="num1" placeholder="Enter first number">
+<input type="number" id="num2" placeholder="Enter second number">
+<button id="sumBtn">Show Sum</button>
+<script>
+$(document).ready(function(){
+  $("#sumBtn").click(function(){
+    var num1 = parseInt($("#num1").val());
+    var num2 = parseInt($("#num2").val());
+    var sum = num1 + num2;
+    alert("Sum: " + sum);
+  });
+});
+</script>
+</body>
+</html>
+B) Using slideDown()
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<input type="number" id="num1" placeholder="Enter first number">
+<input type="number" id="num2" placeholder="Enter second number">
+<button id="sumBtn">Show Sum</button>
+<p id="sumResult" style="display:none;"></p>
+<script>
+$(document).ready(function(){
+  $("#sumBtn").click(function(){
+    var num1 = parseInt($("#num1").val());
+    var num2 = parseInt($("#num2").val());
+    var sum = num1 + num2;
+    $("#sumResult").text("Sum: " + sum).slideDown();
+  });
+});
+</script>
+</body>
+</html>
+
+6. Accept 2 numbers (m and n) and display all numbers between them
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<input type="number" id="m" placeholder="Enter m">
+<input type="number" id="n" placeholder="Enter n">
+<button id="showBtn">Show Numbers</button>
+<p id="numbers"></p>
+<script>
+$(document).ready(function(){
+  $("#showBtn").click(function(){
+    var m = parseInt($("#m").val());
+    var n = parseInt($("#n").val());
+    var result = "";
+    for(var i = m+1; i < n; i++){
+      result += i + " ";
+    }
+    $("#numbers").text(result);
+  });
+});
+</script>
+</body>
+</html>
+
+7. Display the multiplication table of a user input number
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<input type="number" id="number" placeholder="Enter a number">
+<button id="tableBtn">Show Table</button>
+<p id="table"></p>
+<script>
+$(document).ready(function(){
+  $("#tableBtn").click(function(){
+    var number = parseInt($("#number").val());
+    var table = "";
+    for(var i = 1; i <= 10; i++){
+      table += number + " x " + i + " = " + (number * i) + "<br>";
+    }
+    $("#table").html(table);
+  });
+});
+</script>
+</body>
+</html>
+
+
+
+
