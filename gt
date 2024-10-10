@@ -306,6 +306,31 @@ $(document).ready(function(){
 </body>
 </html>
 
+#fade
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+  <button>click</button>
+  <div id="d1" style="width: 80px;height:80px ;background-color:blue;"></div>
+  <div id="d2" style="width: 80px;height:80px;background-color:rgb(255, 234, 45);"></div>
+  <div id="d3" style="width: 80px;height:80px;background-color: blue;"></div>
+  <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#d1").fadeTo("fast",0.15);
+            $("#d2").fadeTo("slow",0.15);
+            $("#d3").fadeTo("slow",0.15);
+
+        });
+    });
+
+  </script>
+  </body>
+</html>
+
 
 
 
